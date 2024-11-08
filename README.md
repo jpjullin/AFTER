@@ -1,3 +1,5 @@
+![After Logo](/after.jpeg)
+
 # AFTER: Audio Features Transfer and Exploration in Real-time
 
 Official repository of AFTER, a real-time implementation of : _Combining audio control and style transfer using latent diffusion_ ([article link](https://arxiv.org/abs/2408.00196)) by Nils Demerlé, P. Esling, G. Doras and D. Genova.
