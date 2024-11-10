@@ -2,15 +2,11 @@
 
 # AFTER: Audio Features Transfer and Exploration in Real-time
 
-Official repository of AFTER, a real-time implementation of : _Combining audio control and style transfer using latent diffusion_ ([article link](https://arxiv.org/abs/2408.00196)) by Nils Demerlé, P. Esling, G. Doras and D. Genova.
+__AFTER__ is a diffusion-based generative model that generate audio based on two targets : one audio stream that will set the global style or timbre, and one structure input -either audio or MIDI- that sets the time-varying features of the signal. 
 
-__AFTER__ is a diffusion-based generative model that generate audio based on two targets : one audio stream that will set the global style or timbre, and one structure input -either audio or MIDI- for the time-varying features of the signal. 
+This repository is a real-time implementation of the research paper _Combining audio control and style transfer using latent diffusion_ ([article link](https://arxiv.org/abs/2408.00196)) by Nils Demerlé, P. Esling, G. Doras and D. Genova. The code to train a non-streamable version of the model is avaialble on this [github repository](https://github.com/NilsDem/control-transfer-diffusion/), and you can listen to some transfer examples on the orignal paper supporting [webpage](https://nilsdem.github.io/control-transfer-diffusion/). Our real-time implementation of the model runs in MaxMSP and AbletonLive thanks to [_nn_tilde_](https://github.com/acids-ircam/nn_tilde), a MaxMSP external that embeds Pytorch models. 
 
-The code to train a non-streamable version model on this [github repository](https://github.com/NilsDem/control-transfer-diffusion/), and you can listen to some transfer examples on the orignal paper supporting [webpage](https://nilsdem.github.io/control-transfer-diffusion/).
-
-Thanks to the use of  [_cached_convolution_](https://github.com/acids-ircam/cached_conv) and the [_nn_tilde_](https://github.com/acids-ircam/nn_tilde) library we developped a real-time version of the model that runs in MaxMSP and AbletonLive.
-
-We will be releasing the code to train your own streambable version of the model very soon. In the meantime, you can try and experiment with three of our pretrained models in MaxMSP ! 
+We will be releasing the code to train your own streambable version of the model very soon. In the meantime, you can try and experiment with three of our pretrained models !
 
 ## Requirements
 
@@ -39,8 +35,7 @@ You can download our model trained on the [SLAKH dataset](http://www.slakh.com/)
 
 ## Audio-to-audio 
 
-In audio-to-audio mode, time-varying features are extracted from an audio audio stream and transferred to the timbre of a second audio stream. 
-The guidance parameter sets the conditioning strengh on the structure input, and the number of diffusion steps improves generation quality at the cost of higher CPU load.
+In audio-to-audio mode, time-varying features are extracted from an audio audio stream and transferred to the timbre of a second audio stream. Similarly, the guidance parameter sets the conditioning strengh on the structure input, and the number of diffusion steps improves generation quality at the cost of higher CPU load.
 
 You can download our model trained on the [SLAKH dataset](http://www.slakh.com/) at the following [link](nub).
 
@@ -56,7 +51,7 @@ This model has been used in three artistic projects :
 - Live performance by french electronic artist Canblaster for Forum Studio Session at IRCAM. Full concert available on [youtube](https://www.youtube.com/watch?v=0E9nNyz4pv4).
 - [Nature Manifesto](https://www.centrepompidou.fr/fr/programme/agenda/evenement/dkTTgJv), an immersive sound installation by Björk and Robin Meier. At Centre Pompidou in Paris from November 20 to December 9, 2024. 
 
-Looking forward to hear your own contributions and artstic use of the model, stay tuned for the training code release ! 
+Looking forward to hear your own contributions and artistic use of the model, stay tuned for the training code release ! 
 
 
 
