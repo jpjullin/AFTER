@@ -20,7 +20,7 @@ Our MIDI-to-audio model is a 4 voice polyphonic synth that generates audio for p
 
 The guidance parameter sets the conditioning strengh on the MIDI input, and the number of diffusion steps improves generation quality at the cost of higher CPU load.
 
-You can download our model trained on the [SLAKH dataset](http://www.slakh.com/) at the following [link](nub).
+You can download our model trained on the [SLAKH dataset](http://www.slakh.com/) at the following [link](https://nubo.ircam.fr/index.php/s/tHMmFmkF6kgn7ND).
 <table >
   <tr>
     <td style='text-align:center; vertical-align:middle'> Audio timbre target</td>
@@ -37,7 +37,7 @@ You can download our model trained on the [SLAKH dataset](http://www.slakh.com/)
 
 In audio-to-audio mode, time-varying features are extracted from an audio audio stream and transferred to the timbre of a second audio stream. Similarly, the guidance parameter sets the conditioning strengh on the structure input, and the number of diffusion steps improves generation quality at the cost of higher CPU load.
 
-You can download our model trained on the [SLAKH dataset](http://www.slakh.com/) at the following [link](nub).
+You can download our model trained on the [SLAKH dataset](http://www.slakh.com/) at the following [link](https://nubo.ircam.fr/index.php/s/tHMmFmkF6kgn7ND).
 
 
 <img src="docs/audio_to_audio.png"  height="500"/>
