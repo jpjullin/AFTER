@@ -4,13 +4,15 @@
 
 __AFTER__ is a diffusion-based generative model that generate audio based on two targets : one audio stream that will set the global style or timbre, and one structure input -either audio or MIDI- that sets the time-varying features of the signal. 
 
-This repository is a real-time implementation of the research paper _Combining audio control and style transfer using latent diffusion_ ([article link](https://arxiv.org/abs/2408.00196)) by Nils Demerlé, P. Esling, G. Doras and D. Genova. The code to train a non-streamable version of the model is avaialble on this [github repository](https://github.com/NilsDem/control-transfer-diffusion/), and you can listen to some transfer examples on the orignal paper supporting [webpage](https://nilsdem.github.io/control-transfer-diffusion/). Our real-time implementation of the model runs in MaxMSP and AbletonLive thanks to [_nn_tilde_](https://github.com/acids-ircam/nn_tilde), a MaxMSP external that embeds Pytorch models. 
+This repository is a real-time implementation of the research paper _Combining audio control and style transfer using latent diffusion_ ([article link](https://arxiv.org/abs/2408.00196)) by Nils Demerlé, P. Esling, G. Doras and D. Genova. The code to train a non-streamable version of the model is avaialable on this [github repository](https://github.com/NilsDem/control-transfer-diffusion/), and you can listen to some transfer examples on the orignal paper supporting [webpage](https://nilsdem.github.io/control-transfer-diffusion/). Our real-time implementation of the model runs in MaxMSP and AbletonLive thanks to [_nn_tilde_](https://github.com/acids-ircam/nn_tilde), a MaxMSP external that embeds Pytorch models. 
 
 We will be releasing the code to train your own streambable version of the model very soon. In the meantime, you can try and experiment with three of our pretrained models !
 
-## Requirements
+## Installation
 
 For inference, you only need to install the [_nn_tilde_](https://github.com/acids-ircam/nn_tilde) external.
+
+Clone this repository to a local directory, and make sure you add it to the list of Max paths (Options -> File Preferences...) with the recursive subfolders option enabled. Download the pretrained model with the links in the below and copy them in the AFTER directory.  
 
 ## MIDI-to-audio 
 
@@ -20,24 +22,24 @@ Our MIDI-to-audio model is a 4 voice polyphonic synth that generates audio for p
 
 The guidance parameter sets the conditioning strengh on the MIDI input, and the number of diffusion steps improves generation quality at the cost of higher CPU load.
 
-You can download our model trained on the [SLAKH dataset](http://www.slakh.com/) at the following [link](https://nubo.ircam.fr/index.php/s/tHMmFmkF6kgn7ND).
-<table >
-  <tr>
-    <td style='text-align:center; vertical-align:middle'> Audio timbre target</td>
-     <td style='text-align:center; vertical-align:middle'>Manul timbre control</td>
-  </tr>
-  <tr>
-<td valign="top"><img src="docs/midi_to_audio.png"  height="500"/></td>
-<td valign="top"><img src="docs/midi_to_audio_manual.png" height="500"/></td> 
- </tr>
- </table>
+You can download our model trained on the [SLAKH dataset](http://www.slakh.com/) at the following [link](https://nubo.ircam.fr/index.php/s/tHMmFmkF6kgn7ND/download).
+
+
+
+Audio timbre target           |  Manual timbre control
+:-------------------------:|:-------------------------:
+<img src="docs/midi_to_audio.png"   height="500"/>| <img src="docs/midi_to_audio_manual.png"  height="500"/>
+
+
+
+
 
 
 ## Audio-to-audio 
 
 In audio-to-audio mode, time-varying features are extracted from an audio audio stream and transferred to the timbre of a second audio stream. Similarly, the guidance parameter sets the conditioning strengh on the structure input, and the number of diffusion steps improves generation quality at the cost of higher CPU load.
 
-You can download our model trained on the [SLAKH dataset](http://www.slakh.com/) at the following [link](https://nubo.ircam.fr/index.php/s/NCHZ5Q9aMsFxmyp).
+You can download our model trained on the [SLAKH dataset](http://www.slakh.com/) at the following [link](https://nubo.ircam.fr/index.php/s/NCHZ5Q9aMsFxmyp/download).
 
 
 <img src="docs/audio_to_audio.png"  height="500"/>

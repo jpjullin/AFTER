@@ -183,7 +183,7 @@
 					"clipheight" : 20.0,
 					"data" : 					{
 						"clips" : [ 							{
-								"absolutepath" : "/Users/demerle/Documents/PHD/repos/AFTER/patchs/samples/strings.wav",
+								"absolutepath" : "./samples/strings.wav",
 								"filename" : "strings.wav",
 								"filekind" : "audiofile",
 								"id" : "u380006692",
@@ -194,7 +194,7 @@
 
 							}
 , 							{
-								"absolutepath" : "voice.wav",
+								"absolutepath" : "./samples/voice.wav",
 								"filename" : "voice.wav",
 								"filekind" : "audiofile",
 								"id" : "u639006987",
@@ -205,7 +205,7 @@
 
 							}
 , 							{
-								"absolutepath" : "synth.wav",
+								"absolutepath" : "./samples/synth.wav",
 								"filename" : "synth.wav",
 								"filekind" : "audiofile",
 								"id" : "u388006883",
@@ -216,7 +216,7 @@
 
 							}
 , 							{
-								"absolutepath" : "/Users/demerle/Documents/PHD/repos/AFTER/patchs/samples/piano.wav",
+								"absolutepath" : "./samples/piano.wav",
 								"filename" : "piano.wav",
 								"filekind" : "audiofile",
 								"id" : "u458011066",
@@ -227,7 +227,7 @@
 
 							}
 , 							{
-								"absolutepath" : "/Users/demerle/Documents/PHD/repos/AFTER/patchs/samples/guitar1.wav",
+								"absolutepath" : "./samples/guitar1.wav",
 								"filename" : "guitar1.wav",
 								"filekind" : "audiofile",
 								"id" : "u866008674",
@@ -238,7 +238,7 @@
 
 							}
 , 							{
-								"absolutepath" : "/Users/demerle/Documents/PHD/repos/AFTER/patchs/samples/guitar2.wav",
+								"absolutepath" : "./samples/guitar2.wav",
 								"filename" : "guitar2.wav",
 								"filekind" : "audiofile",
 								"id" : "u965009395",
@@ -249,7 +249,7 @@
 
 							}
 , 							{
-								"absolutepath" : "/Users/demerle/Documents/PHD/repos/AFTER/patchs/samples/keys.wav",
+								"absolutepath" : "./samples/keys.wav",
 								"filename" : "keys.wav",
 								"filekind" : "audiofile",
 								"id" : "u975007535",
@@ -260,7 +260,7 @@
 
 							}
 , 							{
-								"absolutepath" : "flute.wav",
+								"absolutepath" : "./samples/flute.wav",
 								"filename" : "flute.wav",
 								"filekind" : "audiofile",
 								"id" : "u357010334",
@@ -398,7 +398,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 343.0, 512.0, 87.0, 22.0 ],
+					"patching_rect" : [ 344.0, 512.0, 87.0, 22.0 ],
 					"text" : "set guidance 2"
 				}
 
@@ -500,7 +500,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"midpoints" : [ 352.5, 542.096248913556337, 239.86859543249011, 542.096248913556337, 239.86859543249011, 499.256951689720154, 53.5, 499.256951689720154 ],
+					"midpoints" : [ 353.5, 542.096248913556337, 239.86859543249011, 542.096248913556337, 239.86859543249011, 499.256951689720154, 53.5, 499.256951689720154 ],
 					"source" : [ "obj-17", 0 ]
 				}
 
@@ -637,43 +637,8 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "guitar1.wav",
-				"bootpath" : "~/Documents/PHD/repos/AFTER/patchs/samples",
-				"patcherrelativepath" : "./samples",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "guitar2.wav",
-				"bootpath" : "~/Documents/PHD/repos/AFTER/patchs/samples",
-				"patcherrelativepath" : "./samples",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "keys.wav",
-				"bootpath" : "~/Documents/PHD/repos/AFTER/patchs/samples",
-				"patcherrelativepath" : "./samples",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "nn~.mxo",
 				"type" : "iLaX"
-			}
-, 			{
-				"name" : "piano.wav",
-				"bootpath" : "~/Documents/PHD/repos/AFTER/patchs/samples",
-				"patcherrelativepath" : "./samples",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "strings.wav",
-				"bootpath" : "~/Documents/PHD/repos/AFTER/patchs/samples",
-				"patcherrelativepath" : "./samples",
-				"type" : "WAVE",
-				"implicit" : 1
 			}
 , 			{
 				"name" : "synth.wav",
