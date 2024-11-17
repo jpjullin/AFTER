@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 87.0, 1372.0, 708.0 ],
+		"rect" : [ 34.0, 87.0, 1372.0, 703.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -46,7 +46,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 424.0, 539.0, 115.5, 21.0 ],
+					"patching_rect" : [ 424.0, 585.0, 115.5, 21.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 419.0, 620.5, 115.5, 21.0 ],
 					"text" : "Model On",
@@ -1331,7 +1331,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 410.0, 301.0, 115.5, 36.0 ],
+					"patching_rect" : [ 405.0, 301.0, 115.5, 36.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 405.0, 393.0, 115.5, 36.0 ],
@@ -1394,7 +1394,7 @@
 
 							}
 , 							{
-								"absolutepath" : "/Users/demerle/Documents/PHD/repos/AFTER/patchs/samples/guitar1.wav",
+								"absolutepath" : "guitar1.wav",
 								"filename" : "guitar1.wav",
 								"filekind" : "audiofile",
 								"id" : "u866008674",
@@ -1405,7 +1405,7 @@
 
 							}
 , 							{
-								"absolutepath" : "/Users/demerle/Documents/PHD/repos/AFTER/patchs/samples/guitar2.wav",
+								"absolutepath" : "guitar2.wav",
 								"filename" : "guitar2.wav",
 								"filekind" : "audiofile",
 								"id" : "u965009395",
@@ -1416,7 +1416,7 @@
 
 							}
 , 							{
-								"absolutepath" : "/Users/demerle/Documents/PHD/repos/AFTER/patchs/samples/keys.wav",
+								"absolutepath" : "keys.wav",
 								"filename" : "keys.wav",
 								"filekind" : "audiofile",
 								"id" : "u975007535",
@@ -1438,13 +1438,13 @@
 
 							}
 , 							{
-								"absolutepath" : "/Users/demerle/Documents/PHD/repos/AFTER/patchs/samples/piano.wav",
+								"absolutepath" : "piano.wav",
 								"filename" : "piano.wav",
 								"filekind" : "audiofile",
 								"id" : "u458011066",
-								"loop" : 0,
+								"loop" : 1,
 								"content_state" : 								{
-
+									"loop" : 1
 								}
 
 							}
@@ -1460,7 +1460,7 @@
 
 							}
 , 							{
-								"absolutepath" : "/Users/demerle/Documents/PHD/repos/AFTER/patchs/samples/strings.wav",
+								"absolutepath" : "strings.wav",
 								"filename" : "strings.wav",
 								"filekind" : "audiofile",
 								"id" : "u380006692",
@@ -1576,7 +1576,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 317.0, 476.0, 205.0, 24.0 ],
+					"patching_rect" : [ 317.0, 522.0, 205.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 311.5, 556.0, 205.0, 24.0 ],
 					"text" : "Model Parameters",
@@ -1591,7 +1591,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 424.0, 507.0, 87.0, 22.0 ],
+					"patching_rect" : [ 424.0, 553.0, 87.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 419.0, 589.0, 87.0, 22.0 ],
 					"text" : "set guidance 3"
@@ -1604,7 +1604,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 16.0, 541.0, 33.0, 33.0 ],
+					"patching_rect" : [ 16.0, 587.0, 33.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 11.0, 624.0, 45.0, 45.0 ]
 				}
@@ -1691,7 +1691,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 220.0, 381.0, 67.0, 22.0 ],
+					"patching_rect" : [ 222.0, 392.0, 67.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 215.0, 464.0, 67.0, 22.0 ],
 					"text" : "unpack 0 0"
@@ -1705,7 +1705,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 152.0, 381.0, 67.0, 22.0 ],
+					"patching_rect" : [ 154.0, 392.0, 67.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 147.0, 464.0, 67.0, 22.0 ],
 					"text" : "unpack 0 0"
@@ -1719,7 +1719,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 84.0, 381.0, 67.0, 22.0 ],
+					"patching_rect" : [ 86.0, 392.0, 67.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 79.0, 464.0, 67.0, 22.0 ],
 					"text" : "unpack 0 0"
@@ -1733,7 +1733,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 16.0, 381.0, 67.0, 22.0 ],
+					"patching_rect" : [ 18.0, 392.0, 67.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 11.0, 464.0, 67.0, 22.0 ],
 					"text" : "unpack 0 0"
@@ -1747,7 +1747,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 51.0, 412.0, 31.0, 22.0 ],
+					"patching_rect" : [ 53.0, 423.0, 31.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 46.0, 495.0, 31.0, 22.0 ],
 					"text" : "sig~"
@@ -1761,7 +1761,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 255.0, 412.0, 31.0, 22.0 ],
+					"patching_rect" : [ 257.0, 423.0, 31.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 250.0, 495.0, 31.0, 22.0 ],
 					"text" : "sig~"
@@ -1775,7 +1775,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 221.0, 412.0, 31.0, 22.0 ],
+					"patching_rect" : [ 223.0, 423.0, 31.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 216.0, 495.0, 31.0, 22.0 ],
 					"text" : "sig~"
@@ -1789,7 +1789,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 187.0, 412.0, 31.0, 22.0 ],
+					"patching_rect" : [ 189.0, 423.0, 31.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 182.0, 495.0, 31.0, 22.0 ],
 					"text" : "sig~"
@@ -1803,7 +1803,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 152.0, 412.0, 31.0, 22.0 ],
+					"patching_rect" : [ 154.0, 423.0, 31.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 147.0, 495.0, 31.0, 22.0 ],
 					"text" : "sig~"
@@ -1817,7 +1817,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 118.0, 412.0, 31.0, 22.0 ],
+					"patching_rect" : [ 120.0, 423.0, 31.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 113.0, 495.0, 31.0, 22.0 ],
 					"text" : "sig~"
@@ -1831,7 +1831,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 84.0, 412.0, 31.0, 22.0 ],
+					"patching_rect" : [ 86.0, 423.0, 31.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 79.0, 495.0, 31.0, 22.0 ],
 					"text" : "sig~"
@@ -1845,7 +1845,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 18.0, 412.0, 31.0, 22.0 ],
+					"patching_rect" : [ 20.0, 423.0, 31.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 13.0, 495.0, 31.0, 22.0 ],
 					"text" : "sig~"
@@ -1861,7 +1861,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 322.0, 538.0, 127.0, 22.0 ],
+					"patching_rect" : [ 322.0, 584.0, 127.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 317.0, 620.0, 127.0, 22.0 ]
 				}
@@ -1874,7 +1874,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 322.0, 507.0, 93.0, 22.0 ],
+					"patching_rect" : [ 322.0, 553.0, 93.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 317.0, 589.0, 93.0, 22.0 ],
 					"text" : "set nb_steps 10"
@@ -1888,10 +1888,10 @@
 					"numinlets" : 9,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 16.0, 506.0, 269.5, 22.0 ],
+					"patching_rect" : [ 16.0, 552.0, 272.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 11.0, 589.0, 269.5, 22.0 ],
-					"text" : "nn~ slakh_stream_midi forward 16384"
+					"text" : "nn~ slakh_midi forward 16384"
 				}
 
 			}
@@ -1915,7 +1915,7 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 1 ],
-					"midpoints" : [ 60.5, 442.550334811210632, 56.8125, 442.550334811210632 ],
+					"midpoints" : [ 62.5, 442.550334811210632, 57.125, 442.550334811210632 ],
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -1923,7 +1923,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"midpoints" : [ 331.5, 569.580152988433838, 298.946564674377441, 569.580152988433838, 298.946564674377441, 490.721413940191269, 25.5, 490.721413940191269 ],
+					"midpoints" : [ 331.5, 615.580152988433838, 298.946564674377441, 615.580152988433838, 298.946564674377441, 536.721413940191269, 25.5, 536.721413940191269 ],
 					"source" : [ "obj-10", 0 ]
 				}
 
@@ -1959,7 +1959,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
-					"hidden" : 1,
 					"source" : [ "obj-13", 0 ]
 				}
 
@@ -1967,7 +1966,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"midpoints" : [ 433.5, 532.907384395599365, 297.0, 532.907384395599365, 297.0, 490.663201689720154, 25.5, 490.663201689720154 ],
+					"midpoints" : [ 433.5, 578.907384395599365, 297.0, 578.907384395599365, 297.0, 536.663201689720154, 25.5, 536.663201689720154 ],
 					"source" : [ "obj-17", 0 ]
 				}
 
@@ -1975,7 +1974,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 7 ],
-					"midpoints" : [ 264.5, 461.0, 244.6875, 461.0 ],
+					"midpoints" : [ 266.5, 456.0, 246.875, 456.0 ],
 					"source" : [ "obj-18", 0 ]
 				}
 
@@ -1999,7 +1998,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 6 ],
-					"midpoints" : [ 230.5, 461.879193842411041, 213.375, 461.879193842411041 ],
+					"midpoints" : [ 232.5, 470.879193842411041, 215.25, 470.879193842411041 ],
 					"source" : [ "obj-20", 0 ]
 				}
 
@@ -2007,7 +2006,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 5 ],
-					"midpoints" : [ 196.5, 460.879193842411041, 182.0625, 460.879193842411041 ],
+					"midpoints" : [ 198.5, 480.879193842411041, 183.625, 480.879193842411041 ],
 					"source" : [ "obj-21", 0 ]
 				}
 
@@ -2015,7 +2014,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 4 ],
-					"midpoints" : [ 161.5, 458.214764326810837, 150.75, 458.214764326810837 ],
+					"midpoints" : [ 163.5, 494.214764326810837, 152.0, 494.214764326810837 ],
 					"source" : [ "obj-23", 0 ]
 				}
 
@@ -2030,7 +2029,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 3 ],
-					"midpoints" : [ 127.5, 444.22818723320961, 119.4375, 444.22818723320961 ],
+					"midpoints" : [ 129.5, 444.22818723320961, 120.375, 444.22818723320961 ],
 					"source" : [ "obj-26", 0 ]
 				}
 
@@ -2038,7 +2037,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 2 ],
-					"midpoints" : [ 93.5, 445.0, 88.125, 445.0 ],
+					"midpoints" : [ 95.5, 445.0, 88.75, 445.0 ],
 					"source" : [ "obj-27", 0 ]
 				}
 
@@ -2046,7 +2045,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"midpoints" : [ 27.5, 441.315436124801636, 25.5, 441.315436124801636 ],
+					"midpoints" : [ 29.5, 441.315436124801636, 25.5, 441.315436124801636 ],
 					"source" : [ "obj-28", 0 ]
 				}
 
@@ -2054,7 +2053,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"midpoints" : [ 331.5, 532.686477556824684, 297.0, 532.686477556824684, 297.0, 490.0, 25.5, 490.0 ],
+					"midpoints" : [ 331.5, 578.686477556824684, 297.0, 578.686477556824684, 297.0, 536.0, 25.5, 536.0 ],
 					"source" : [ "obj-37", 0 ]
 				}
 
@@ -2062,7 +2061,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-13", 2 ],
-					"hidden" : 1,
 					"source" : [ "obj-4", 2 ]
 				}
 
@@ -2070,7 +2068,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-13", 1 ],
-					"hidden" : 1,
 					"source" : [ "obj-4", 1 ]
 				}
 
@@ -2078,7 +2075,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
-					"hidden" : 1,
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -2086,7 +2082,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-4", 1 ],
-					"hidden" : 1,
 					"source" : [ "obj-47", 1 ]
 				}
 
@@ -2094,7 +2089,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
-					"hidden" : 1,
 					"source" : [ "obj-47", 0 ]
 				}
 
@@ -2226,8 +2220,8 @@
 			}
 , 			{
 				"name" : "flute.wav",
-				"bootpath" : "~/Documents/Max 8/Library/release",
-				"patcherrelativepath" : "../../../../Max 8/Library/release",
+				"bootpath" : "~/Documents/PHD/repos/AFTER/patchs/samples",
+				"patcherrelativepath" : "./samples",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -2272,15 +2266,15 @@
 			}
 , 			{
 				"name" : "synth.wav",
-				"bootpath" : "~/Documents/Max 8/Library/release",
-				"patcherrelativepath" : "../../../../Max 8/Library/release",
+				"bootpath" : "~/Documents/PHD/repos/AFTER/patchs/samples",
+				"patcherrelativepath" : "./samples",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "voice.wav",
-				"bootpath" : "~/Documents/Max 8/Library/release",
-				"patcherrelativepath" : "../../../../Max 8/Library/release",
+				"bootpath" : "~/Documents/PHD/repos/AFTER/patchs/samples",
+				"patcherrelativepath" : "./samples",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
