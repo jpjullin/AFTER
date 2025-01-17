@@ -1,0 +1,5 @@
+from __gin__ import dynamic_registration
+from cached_conv import convs
+
+#encoder/convs.get_padding.mode = 'causal'
+encoder_time/convs.get_padding.mode = 'causal'

@@ -1,6 +1,9 @@
 *DS_Store*
 pretrained/*
-
+exports/*
+runs/*
+**/*perso*/
+**/*runs*/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
