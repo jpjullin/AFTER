@@ -57,7 +57,7 @@ def add_gin_extension(config_name: str) -> str:
 
 def main(args):
 
-    encoders_config_path = "./diffusion/runs" + args.pretrained_model + "/config.gin"
+    encoders_config_path = "./diffusion/runs/" + args.pretrained_model + "/config.gin"
 
     with gin.unlock_config():
         gin.parse_config_files_and_bindings([encoders_config_path], [])
