@@ -16,19 +16,19 @@ cc.use_cached_conv(False)
 
 parser = argparse.ArgumentParser()
 
-parser.add_argument("--name", type=str, default="test_distill_midi")
+parser.add_argument("--name", type=str, default="streaming_midi")
 parser.add_argument("--step", type=int, default=800000)
-parser.add_argument("--out_name", type=str, default="AFTER_slakh_midi_acausal")
+parser.add_argument("--out_name", type=str, default = None)
 parser.add_argument("--emb_model_path",
                     type=str,
-                    default="pretrained/slakh_2048_acausal.ts")
+                    default=None)
 parser.add_argument("--npoly", type=int, default=4)
 
 
 def main(args):
 
     # Parse model folder
-    folder = "./runs/" + args.name
+    folder = "./diffusion/runs/" + args.name
     checkpoint_path = folder + "/checkpoint" + str(args.step) + "_EMA.pt"
     config = folder + "/config.gin"
 
@@ -85,10 +85,7 @@ def main(args):
             self.zt_channels = zt_channels
             self.ae_latents = ae_latents
             self.emb_model_out = torch.jit.load(args.emb_model_path)
-            #self.emb_model_structure = torch.jit.load(args.emb_model_path)
-            self.emb_model_timbre = torch.jit.load(
-                "pretrained/slakh_stream.ts")
-
+            self.emb_model_timbre = torch.jit.load(args.emb_model_path)
             self.drop_value = blender.drop_value
 
             dummy = torch.zeros(1, 1, 4 * 4096)

@@ -9,25 +9,22 @@ import os
 torch.set_grad_enabled(False)
 
 import gin
-
 import cached_conv as cc
 
 cc.use_cached_conv(True)
 
 parser = argparse.ArgumentParser()
 
-parser.add_argument("--name", type=str, default="test_distill5_1past_comp")
+parser.add_argument("--name", type=str, default="steaming_model")
 parser.add_argument("--step", type=int, default=1300000)
-parser.add_argument("--out_name", type=str, default="AFTER_slakh_audio")
+parser.add_argument("--out_name", type=str, default=None)
 parser.add_argument("--emb_model_path",
                     type=str,
-                    default="pretrained/slakh_stream.ts")
-
+                    default=None)
 
 def main(args):
-
     # Parse model folder
-    folder = "./runs/" + args.name
+    folder = "./diffusion/runs/" + args.name
     checkpoint_path = folder + "/checkpoint" + str(args.step) + "_EMA.pt"
     config = folder + "/config.gin"
 

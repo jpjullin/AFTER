@@ -14,7 +14,7 @@ ZS_CHANNELS = 16
 ZT_CHANNELS = 32
 SR = 44100
 SIGMA_DATA = "estimate"
-N_SIGNAL = 256
+N_SIGNAL = 128
 
 STRUCTURE_TYPE = "audio"
 
@@ -91,16 +91,7 @@ diffusion.model.Base.fit:
     update_classifier_every = 4
     adversarial_loss = "cosine"
     adversarial_weight = 0.3
-
-    ## Cycle Consistency
-    cycle_start_step = 700000
-    cycle_consistency=True
-    cycle_weights= [1.5, 0.25]
-    cycle_mode="interpolant"
-    cycle_loss_type="full_simclr"
-    cycle_swap_target="cond"
-
-
+    
     ### DATA ###
     use_balancer = True
     shuffle_zsem = False

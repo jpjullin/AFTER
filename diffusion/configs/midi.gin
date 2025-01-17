@@ -13,7 +13,7 @@ ZT_CHANNELS = 32
 SR = 44100
 SIGMA_DATA = "estimate"
 
-N_SIGNAL = 256
+N_SIGNAL = 128
 STRUCTURE_TYPE = "midi"
 
 
@@ -42,7 +42,6 @@ encoder_time/diffusion.networks.Encoder1D:
     upscale_out = False
 
 encoder_time/convs.get_padding.mode = 'causal'
-
 
 classifier/diffusion.networks.Encoder1D:
     in_size = %ZS_CHANNELS

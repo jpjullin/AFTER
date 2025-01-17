@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 87.0, 714.0, 705.0 ],
+		"rect" : [ 34.0, 87.0, 714.0, 703.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -183,7 +183,7 @@
 					"clipheight" : 20.0,
 					"data" : 					{
 						"clips" : [ 							{
-								"absolutepath" : "./samples/strings.wav",
+								"absolutepath" : "strings.wav",
 								"filename" : "strings.wav",
 								"filekind" : "audiofile",
 								"id" : "u380006692",
@@ -194,7 +194,7 @@
 
 							}
 , 							{
-								"absolutepath" : "./samples/voice.wav",
+								"absolutepath" : "voice.wav",
 								"filename" : "voice.wav",
 								"filekind" : "audiofile",
 								"id" : "u639006987",
@@ -205,7 +205,7 @@
 
 							}
 , 							{
-								"absolutepath" : "./samples/synth.wav",
+								"absolutepath" : "synth.wav",
 								"filename" : "synth.wav",
 								"filekind" : "audiofile",
 								"id" : "u388006883",
@@ -216,7 +216,7 @@
 
 							}
 , 							{
-								"absolutepath" : "./samples/piano.wav",
+								"absolutepath" : "piano.wav",
 								"filename" : "piano.wav",
 								"filekind" : "audiofile",
 								"id" : "u458011066",
@@ -227,7 +227,7 @@
 
 							}
 , 							{
-								"absolutepath" : "./samples/guitar1.wav",
+								"absolutepath" : "guitar1.wav",
 								"filename" : "guitar1.wav",
 								"filekind" : "audiofile",
 								"id" : "u866008674",
@@ -238,7 +238,7 @@
 
 							}
 , 							{
-								"absolutepath" : "./samples/guitar2.wav",
+								"absolutepath" : "guitar2.wav",
 								"filename" : "guitar2.wav",
 								"filekind" : "audiofile",
 								"id" : "u965009395",
@@ -249,7 +249,7 @@
 
 							}
 , 							{
-								"absolutepath" : "./samples/keys.wav",
+								"absolutepath" : "keys.wav",
 								"filename" : "keys.wav",
 								"filekind" : "audiofile",
 								"id" : "u975007535",
@@ -260,7 +260,7 @@
 
 							}
 , 							{
-								"absolutepath" : "./samples/flute.wav",
+								"absolutepath" : "flute.wav",
 								"filename" : "flute.wav",
 								"filekind" : "audiofile",
 								"id" : "u357010334",
@@ -631,8 +631,29 @@
 			}
 , 			{
 				"name" : "flute.wav",
-				"bootpath" : "~/Documents/Max 8/Library/release",
-				"patcherrelativepath" : "../../../../Max 8/Library/release",
+				"bootpath" : "~/Documents/PHD/repos/AFTER/patchs/samples",
+				"patcherrelativepath" : "./samples",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "guitar1.wav",
+				"bootpath" : "~/Documents/PHD/repos/AFTER/patchs/samples",
+				"patcherrelativepath" : "./samples",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "guitar2.wav",
+				"bootpath" : "~/Documents/PHD/repos/AFTER/patchs/samples",
+				"patcherrelativepath" : "./samples",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "keys.wav",
+				"bootpath" : "~/Documents/PHD/repos/AFTER/patchs/samples",
+				"patcherrelativepath" : "./samples",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -641,16 +662,30 @@
 				"type" : "iLaX"
 			}
 , 			{
+				"name" : "piano.wav",
+				"bootpath" : "~/Documents/PHD/repos/AFTER/patchs/samples",
+				"patcherrelativepath" : "./samples",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "strings.wav",
+				"bootpath" : "~/Documents/PHD/repos/AFTER/patchs/samples",
+				"patcherrelativepath" : "./samples",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "synth.wav",
-				"bootpath" : "~/Documents/Max 8/Library/release",
-				"patcherrelativepath" : "../../../../Max 8/Library/release",
+				"bootpath" : "~/Documents/PHD/repos/AFTER/patchs/samples",
+				"patcherrelativepath" : "./samples",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "voice.wav",
-				"bootpath" : "~/Documents/Max 8/Library/release",
-				"patcherrelativepath" : "../../../../Max 8/Library/release",
+				"bootpath" : "~/Documents/PHD/repos/AFTER/patchs/samples",
+				"patcherrelativepath" : "./samples",
 				"type" : "WAVE",
 				"implicit" : 1
 			}

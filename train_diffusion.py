@@ -24,17 +24,18 @@ parser.add_argument("--bsize", type=int, default=256)
 parser.add_argument(
     "--db_path",
     type=str,
-    default=
-    "/data/nils/datasets/instruments/slakh/slakh2100_flac_redux/slakh_2048_onlyz_20s/"
+    default=None,
 )
 
 parser.add_argument("--db_folder", type=str, default=None)
 
-parser.add_argument("--out_path", type=str, default="./runs")
+parser.add_argument("--out_path", type=str, default="./diffusion/runs")
 parser.add_argument("--emb_model_path",
                     type=str,
-                    default="./pretrained/slakh.ts")
+                    default=None)
 
+
+# Puts the dataset in cache prior to training for slow hard drives
 parser.add_argument("--use_cache",
                     type=bool,
                     default=False,
@@ -132,13 +133,14 @@ def main(args):
                                       keys=data_keys,
                                       max_samples=args.max_samples,
                                       recache_every=args.recache_every,
-                                      init_cache=args.use_cache)
+                                      init_cache=args.use_cache,
+                                      split = "train")
 
         valset = CachedSimpleDataset(path=args.db_path,
                                      keys=data_keys,
                                      max_samples=args.max_samples,
                                      recache_every=args.recache_every,
-                                     validation=True,
+                                     split="validation",
                                      init_cache=args.use_cache)
         train_sampler, val_sampler = None, None
 

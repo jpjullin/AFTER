@@ -16,12 +16,12 @@ class CachedSimpleDataset(torch.utils.data.Dataset):
         num_sequential=100,
         recache_every=None,
         init_cache=False,
-        validation_size=0.05,
-        validation=False,
+        validation_size=0.1,
+        split=None,
+        readonly = True,
     ) -> None:
         super().__init__()
 
-        print(validation)
 
         self.num_sequential = num_sequential
         self.buffer_keys = keys
@@ -31,9 +31,10 @@ class CachedSimpleDataset(torch.utils.data.Dataset):
 
         self.env = lmdb.open(path,
                              lock=False,
-                             readonly=True,
+                             readonly=readonly,
                              readahead=True,
-                             map_async=False)
+                             map_async=False,
+                             map_size=200*1024**3 if readonly == False else None)
 
         with self.env.begin() as txn:
             self.keys = list(txn.cursor().iternext(values=False))
@@ -42,10 +43,11 @@ class CachedSimpleDataset(torch.utils.data.Dataset):
                                                 test_size=validation_size,
                                                 random_state=42)
 
-        if validation:
+        if split == "validation":
             self.keys = [self.keys[i] for i in valid_ids]
-        else:
+        elif split == "train":
             self.keys = [self.keys[i] for i in train_ids]
+        
 
         if self.max_samples is not None and self.max_samples < len(self.keys):
             np.random.seed(0)

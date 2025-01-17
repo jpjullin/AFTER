@@ -4,11 +4,11 @@ import librosa
 import lmdb
 import torch
 import numpy as np
-from audio_example import AudioExample
-from parsers import get_parser
+from dataset.audio_example import AudioExample
+from dataset.parsers import get_parser
 import os
 from tqdm import tqdm
-from transforms import BasicPitchPytorch
+from dataset.transforms import BasicPitchPytorch
 import pickle
 import pretty_midi
 from absl import app, flags
@@ -57,19 +57,12 @@ flags.DEFINE_bool('cut_silences',
                   required=False)
 
 flags.DEFINE_integer('num_signal',
-                     262144 * 4,
+                     131072,
                      help='Number of audio samples to use during training')
 
 flags.DEFINE_integer('sample_rate',
                      44100,
                      help='Sampling rate to use during training')
-
-flags.DEFINE_integer(
-    'ae_ratio',
-    2048,
-    help=
-    'Compression ratio of the AutoEncoder - required for processing midi files into the correct piano roll shape'
-)
 
 flags.DEFINE_integer('db_size',
                      200,
@@ -97,7 +90,7 @@ flags.DEFINE_bool('dyndb',
                   help="Allow the database to grow dynamically")
 
 flags.DEFINE_bool('save_waveform',
-                  default=False,
+                  default=True,
                   help="Save the waveform in the database")
 
 
@@ -154,6 +147,8 @@ def get_midi(midi_data, chunk_number):
 
 
 def main(dummy):
+    
+    FLAGS.num_signal = 2 * FLAGS.num_signal
 
     emb_model = None if FLAGS.emb_model_path is None else torch.jit.load(
         FLAGS.emb_model_path).to(FLAGS.device)
@@ -276,6 +271,7 @@ def main(dummy):
                     ae = AudioExample()
 
                     if FLAGS.save_waveform:
+                        print("hi")
                         assert array.shape[-1] == FLAGS.num_signal
                         array = (array.cpu().numpy() * (2**15 - 1)).astype(
                             np.int16)

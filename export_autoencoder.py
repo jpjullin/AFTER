@@ -9,11 +9,6 @@ import gin
 parser = argparse.ArgumentParser()
 parser.add_argument("--step", type=int, default=3000000)
 parser.add_argument("--name", type=str)
-parser.add_argument("--save_name", type=str)
-parser.add_argument("--stream",
-                    type=bool,
-                    default=False,
-                    action=argparse.BooleanOptionalAction)
 
 
 class AE(nn_tilde.Module):
@@ -116,19 +111,24 @@ class AE(nn_tilde.Module):
 
 
 def main(argv):
-
-    cc.use_cached_conv(argv.stream)
-
+    cc.use_cached_conv(False)
     ae = AE(model_name=argv.name, step=argv.step)
-
     test_array = torch.zeros((3, 1, ae.comp_ratio * 8))
     z = ae.encode(test_array)
     x = ae.decode(z)
     print(z.shape, x.shape)
     print(ae.forward(test_array).shape)
 
-    ae.export_to_ts("./pretrained/" + argv.save_name +
-                    ("_stream" if argv.stream else "") + ".ts")
+    ae.export_to_ts("./pretrained/" + argv.name + ".ts")
+    
+    
+    cc.use_cached_conv(True)
+    ae = AE(model_name=argv.name, step=argv.step)
+    test_array = torch.zeros((3, 1, ae.comp_ratio * 8))
+    z = ae.encode(test_array)
+    x = ae.decode(z)
+
+    ae.export_to_ts("./pretrained/" + argv.name +  "_stream.ts")
     print("Success !")
 
 

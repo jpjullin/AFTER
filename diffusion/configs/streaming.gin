@@ -6,7 +6,6 @@ import diffusion.networks
 import diffusion.model
 import diffusion.utils
 from cached_conv import convs
-import distill_diffusion
 
 
 N_SIGNAL_STREAMING = 8

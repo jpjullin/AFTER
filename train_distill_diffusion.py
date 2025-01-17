@@ -6,7 +6,7 @@ gin.add_config_file_search_path('./diffusion/configs')
 import torch
 import os
 import numpy as np
-from acids_datasets import CachedSimpleDataset, CombinedDataset
+from dataset import CachedSimpleDataset, CombinedDataset
 import argparse
 from diffusion.utils import collate_fn_streaming
 
@@ -30,16 +30,15 @@ parser.add_argument("--bsize", type=int, default=256)
 parser.add_argument(
     "--db_path",
     type=str,
-    default=
-    "/data/nils/datasets/instruments/slakh/slakh2100_flac_redux/slakh_2048_onlyz_20s/"
+    default=None
 )
 
 parser.add_argument("--db_folder", type=str, default=None)
 
-parser.add_argument("--out_path", type=str, default="./runs")
+parser.add_argument("--out_path", type=str, default="./diffusion/runs")
 parser.add_argument("--emb_model_path",
                     type=str,
-                    default="./pretrained/slakh.ts")
+                    default=None)
 
 parser.add_argument("--use_cache",
                     type=bool,
@@ -58,7 +57,7 @@ def add_gin_extension(config_name: str) -> str:
 
 def main(args):
 
-    encoders_config_path = "./runs/" + args.pretrained_model + "/config.gin"
+    encoders_config_path = "./diffusion/runs" + args.pretrained_model + "/config.gin"
 
     with gin.unlock_config():
         gin.parse_config_files_and_bindings([encoders_config_path], [])
@@ -73,7 +72,7 @@ def main(args):
     )
     
     if args.restart > 0:
-        config_path = "./runs/" + args.name + "/config.gin"
+        config_path = "./diffusion/runs/" + args.name + "/config.gin"
 
         with gin.unlock_config():
             gin.parse_config_files_and_bindings([config_path], [])
@@ -109,7 +108,7 @@ def main(args):
     
     ######### LOAD THE CHECKPOINT #########
 
-    state_dict = torch.load(f"{"./runs/" + args.pretrained_model}/checkpoint" + str(args.pretrained_step) +
+    state_dict = torch.load(f"{"./diffusion/runs/" + args.pretrained_model}/checkpoint" + str(args.pretrained_step) +
                             "_EMA.pt",
                             map_location="cpu")
 
@@ -158,13 +157,14 @@ def main(args):
                                       keys=data_keys,
                                       max_samples=args.max_samples,
                                       recache_every=args.recache_every,
-                                      init_cache=args.use_cache)
+                                      init_cache=args.use_cache,
+                                      split = "train")
 
         valset = CachedSimpleDataset(path=args.db_path,
                                      keys=data_keys,
                                      max_samples=args.max_samples,
                                      recache_every=args.recache_every,
-                                     validation=True,
+                                     split="validation",
                                      init_cache=args.use_cache)
         train_sampler, val_sampler = None, None
 
