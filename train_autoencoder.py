@@ -174,11 +174,12 @@ def main(args):
     else:
         dataset = CachedSimpleDataset(path=args.db_path,
                                       keys=["waveform"],
-                                      init_cache=args.use_cache)
+                                      init_cache=args.use_cache,
+                                      split = "train")
 
         valset = CachedSimpleDataset(path=args.db_path,
                                      keys=["waveform"],
-                                     validation=True,
+                                     split="validation",
                                      init_cache=args.use_cache)
 
         train_sampler, val_sampler = None, None
