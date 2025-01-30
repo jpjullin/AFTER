@@ -16,5 +16,5 @@ pyyaml
 scipy==1.12.0
 mir_eval
 resampy
-py-absl
+absl-py
 nn_tilde
