@@ -1,3 +1,5 @@
+import os
+
 import nn_tilde
 import torch
 import cached_conv as cc
@@ -118,6 +120,9 @@ def main(argv):
     x = ae.decode(z)
     print(z.shape, x.shape)
     print(ae.forward(test_array).shape)
+
+    if not os.path.exists("./pretrained"):
+        os.makedirs("./pretrained")
 
     ae.export_to_ts("./pretrained/" + argv.name + ".ts")
     

@@ -86,7 +86,7 @@ class Trainer(nn.Module):
                 losses[dist.name + "_multiband"] = loss_value.item()
                 total_loss += loss_value * dist.scale
 
-        losses["total_loss"] = torch.tensor(total_loss).item()
+        losses["total_loss"] = total_loss.clone().detach().item()
 
         return total_loss, losses
 

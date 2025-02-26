@@ -169,13 +169,14 @@ def main(args):
             keys=["waveform"],
             init_cache=args.use_cache,
         )
+
         val_sampler = valset.get_sampler()
 
     else:
         dataset = CachedSimpleDataset(path=args.db_path,
                                       keys=["waveform"],
                                       init_cache=args.use_cache,
-                                      split = "train")
+                                      split="train")
 
         valset = CachedSimpleDataset(path=args.db_path,
                                      keys=["waveform"],
@@ -208,6 +209,10 @@ def main(args):
         print("Loading model from step ", step_restart)
         path = "./runs/" + model_name
         trainer.load_model(path, step_restart, args.restart_load_discrim)
+
+    # DEBUG
+    print("validloader.dataset size : ", len(validloader.dataset))
+    print("validloader size : ", len(validloader))
 
     trainer.fit(dataloader,
                 validloader,

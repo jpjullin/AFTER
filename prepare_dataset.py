@@ -101,10 +101,10 @@ def flatten(iterator: Iterable):
 
 
 def search_for_audios(
-    path_list: Sequence[str],
-    extensions: Sequence[str] = [
-        "wav", "opus", "mp3", "aac", "flac", "aif", "ogg"
-    ],
+        path_list: Sequence[str],
+        extensions: Sequence[str] = [
+            "wav", "opus", "mp3", "aac", "flac", "aif", "ogg"
+        ],
 ):
     paths = map(pathlib.Path, path_list)
     audios = []
@@ -124,7 +124,7 @@ def normalize_signal(x: np.ndarray,
         return x
     log_peak = 20 * np.log10(peak)
     log_gain = min(max_gain_db, -log_peak)
-    gain = 10**(log_gain / 20)
+    gain = 10 ** (log_gain / 20)
     return gain_margin * x * gain
 
 
@@ -147,15 +147,17 @@ def get_midi(midi_data, chunk_number):
 
 
 def main(dummy):
-    
     FLAGS.num_signal = 2 * FLAGS.num_signal
 
     emb_model = None if FLAGS.emb_model_path is None else torch.jit.load(
         FLAGS.emb_model_path).to(FLAGS.device)
 
+    if not os.path.exists(FLAGS.output_path):
+        os.makedirs(FLAGS.output_path)
+
     env = lmdb.open(
         FLAGS.output_path,
-        map_size=FLAGS.db_size * 1024**3,
+        map_size=FLAGS.db_size * 1024 ** 3,
         map_async=True,
         writemap=True,
         readahead=False,
@@ -192,7 +194,7 @@ def main(dummy):
     for i, (file, midi_file, metadata) in enumerate(
             zip(tqdm(audio_files), midi_files, metadatas)):
 
-        print(file)
+        # print(file)
         try:
             audio = librosa.load(file, sr=FLAGS.sample_rate)[0]
         except:
@@ -220,7 +222,7 @@ def main(dummy):
                     audio = np.concatenate([audio, audio])
         else:
             audio = audio[:audio.shape[-1] // FLAGS.num_signal *
-                          FLAGS.num_signal]
+                           FLAGS.num_signal]
 
         # MIDI DATA
         if midi_file is not None:
@@ -271,9 +273,9 @@ def main(dummy):
                     ae = AudioExample()
 
                     if FLAGS.save_waveform:
-                        print("hi")
+                        # print("hi")
                         assert array.shape[-1] == FLAGS.num_signal
-                        array = (array.cpu().numpy() * (2**15 - 1)).astype(
+                        array = (array.cpu().numpy() * (2 ** 15 - 1)).astype(
                             np.int16)
                         ae.put_array("waveform", array, dtype=np.int16)
 

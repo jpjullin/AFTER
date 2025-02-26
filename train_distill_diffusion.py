@@ -108,8 +108,7 @@ def main(args):
     
     ######### LOAD THE CHECKPOINT #########
 
-    state_dict = torch.load(f"{"./diffusion/runs/" + args.pretrained_model}/checkpoint" + str(args.pretrained_step) +
-                            "_EMA.pt",
+    state_dict = torch.load(f"./diffusion/runs/{args.pretrained_model}/checkpoint{args.pretrained_step}_EMA.pt",
                             map_location="cpu")
 
     state_dict_model = {

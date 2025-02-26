@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 6,
-			"revision" : 2,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 87.0, 714.0, 703.0 ],
+		"rect" : [ 578.0, 120.0, 714.0, 703.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -47,10 +47,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 107.0, 301.0, 120.0, 36.0 ],
+					"patching_rect" : [ 103.0, 187.0, 120.0, 36.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 435.0, 423.0, 115.5, 50.0 ],
+					"presentation_rect" : [ 435.0, 423.0, 115.5, 51.0 ],
 					"text" : "Enable to preview the structure target",
 					"textjustification" : 1
 				}
@@ -63,7 +63,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 139.0, 407.0, 29.5, 22.0 ],
+					"patching_rect" : [ 135.0, 293.0, 29.5, 22.0 ],
 					"text" : "*~"
 				}
 
@@ -76,7 +76,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 150.0, 341.0, 24.0, 24.0 ],
+					"patching_rect" : [ 146.0, 227.0, 24.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 474.0, 463.0, 24.0, 24.0 ]
 				}
@@ -88,7 +88,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 139.0, 436.0, 35.0, 22.0 ],
+					"patching_rect" : [ 135.0, 322.0, 35.0, 22.0 ],
 					"text" : "dac~"
 				}
 
@@ -102,7 +102,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "multichannelsignal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 44.0, 301.0, 83.0, 81.0 ],
+					"patching_rect" : [ 40.0, 187.0, 83.0, 81.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 348.0, 413.5, 83.0, 81.0 ],
 					"saved_attribute_attributes" : 					{
@@ -131,7 +131,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 303.0, 301.0, 115.5, 36.0 ],
+					"patching_rect" : [ 299.0, 187.0, 115.5, 36.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 420.0, 408.0, 115.5, 36.0 ],
@@ -147,7 +147,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 331.0, 407.0, 29.5, 22.0 ],
+					"patching_rect" : [ 327.0, 293.0, 29.5, 22.0 ],
 					"text" : "*~"
 				}
 
@@ -160,7 +160,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 342.0, 341.0, 24.0, 24.0 ],
+					"patching_rect" : [ 338.0, 227.0, 24.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 459.0, 448.0, 24.0, 24.0 ]
 				}
@@ -172,7 +172,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 331.0, 436.0, 35.0, 22.0 ],
+					"patching_rect" : [ 327.0, 322.0, 35.0, 22.0 ],
 					"text" : "dac~"
 				}
 
@@ -187,6 +187,7 @@
 								"filename" : "strings.wav",
 								"filekind" : "audiofile",
 								"id" : "u380006692",
+								"selection" : [ 0.0, 1.0 ],
 								"loop" : 1,
 								"content_state" : 								{
 									"loop" : 1
@@ -198,6 +199,7 @@
 								"filename" : "voice.wav",
 								"filekind" : "audiofile",
 								"id" : "u639006987",
+								"selection" : [ 0.0, 1.0 ],
 								"loop" : 1,
 								"content_state" : 								{
 									"loop" : 1
@@ -209,6 +211,7 @@
 								"filename" : "synth.wav",
 								"filekind" : "audiofile",
 								"id" : "u388006883",
+								"selection" : [ 0.0, 1.0 ],
 								"loop" : 1,
 								"content_state" : 								{
 									"loop" : 1
@@ -220,6 +223,7 @@
 								"filename" : "piano.wav",
 								"filekind" : "audiofile",
 								"id" : "u458011066",
+								"selection" : [ 0.0, 1.0 ],
 								"loop" : 1,
 								"content_state" : 								{
 									"loop" : 1
@@ -231,6 +235,7 @@
 								"filename" : "guitar1.wav",
 								"filekind" : "audiofile",
 								"id" : "u866008674",
+								"selection" : [ 0.0, 1.0 ],
 								"loop" : 1,
 								"content_state" : 								{
 									"loop" : 1
@@ -242,6 +247,7 @@
 								"filename" : "guitar2.wav",
 								"filekind" : "audiofile",
 								"id" : "u965009395",
+								"selection" : [ 0.0, 1.0 ],
 								"loop" : 1,
 								"content_state" : 								{
 									"loop" : 1
@@ -253,6 +259,7 @@
 								"filename" : "keys.wav",
 								"filekind" : "audiofile",
 								"id" : "u975007535",
+								"selection" : [ 0.0, 1.0 ],
 								"loop" : 0,
 								"content_state" : 								{
 
@@ -264,6 +271,7 @@
 								"filename" : "flute.wav",
 								"filekind" : "audiofile",
 								"id" : "u357010334",
+								"selection" : [ 0.0, 1.0 ],
 								"loop" : 1,
 								"content_state" : 								{
 									"loop" : 1
@@ -284,7 +292,7 @@
 					"originaltempo" : 120.0,
 					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 238.0, 184.0, 192.0, 97.0 ],
+					"patching_rect" : [ 234.0, 70.0, 192.0, 97.0 ],
 					"pitchcorrection" : 0,
 					"presentation" : 1,
 					"presentation_rect" : [ 333.0, 282.0, 192.0, 97.0 ],
@@ -302,7 +310,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "multichannelsignal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 238.0, 301.0, 83.0, 81.0 ],
+					"patching_rect" : [ 234.0, 187.0, 83.0, 81.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 333.0, 398.5, 83.0, 81.0 ],
 					"saved_attribute_attributes" : 					{
@@ -330,9 +338,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 249.0, 153.0, 170.0, 24.0 ],
+					"patching_rect" : [ 245.0, 39.0, 170.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 344.0, 248.0, 170.0, 24.0 ],
+					"presentation_rect" : [ 344.0, 248.0, 170.0, 25.0 ],
 					"text" : "Timbre target",
 					"textjustification" : 1
 				}
@@ -345,7 +353,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 114.0, 210.0, 45.0, 45.0 ]
+					"patching_rect" : [ 110.0, 96.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -357,23 +365,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 44.0, 153.0, 170.0, 24.0 ],
+					"patching_rect" : [ 40.0, 39.0, 170.0, 25.0 ],
 					"text" : "Structure target",
 					"textjustification" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"autofit" : 1,
-					"forceaspect" : 1,
-					"id" : "obj-35",
-					"maxclass" : "fpic",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 318.0, 86.0, 76.0, 40.567567567567565 ],
-					"pic" : "/Users/demerle/Downloads/acids-eps.png"
 				}
 
 			}
@@ -385,7 +379,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 231.5, 482.0, 205.0, 24.0 ],
+					"patching_rect" : [ 228.0, 368.0, 205.0, 25.0 ],
 					"text" : "Model Parameters",
 					"textjustification" : 1
 				}
@@ -398,7 +392,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 344.0, 512.0, 87.0, 22.0 ],
+					"patching_rect" : [ 340.0, 398.0, 87.0, 22.0 ],
 					"text" : "set guidance 2"
 				}
 
@@ -409,7 +403,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 44.0, 541.0, 37.0, 37.0 ]
+					"patching_rect" : [ 40.0, 427.0, 37.0, 37.0 ]
 				}
 
 			}
@@ -422,7 +416,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 245.0, 548.5, 127.0, 22.0 ]
+					"patching_rect" : [ 241.0, 435.0, 127.0, 22.0 ]
 				}
 
 			}
@@ -433,7 +427,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 245.0, 512.0, 93.0, 22.0 ],
+					"patching_rect" : [ 241.0, 398.0, 93.0, 22.0 ],
 					"text" : "set nb_steps 10"
 				}
 
@@ -445,22 +439,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 44.0, 508.0, 176.0, 22.0 ],
+					"patching_rect" : [ 40.0, 394.0, 176.0, 22.0 ],
 					"text" : "nn~ slakh_audio forward 16384"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"autofit" : 1,
-					"forceaspect" : 1,
-					"id" : "obj-31",
-					"maxclass" : "fpic",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 22.0, -42.0, 397.5, 223.59375 ],
-					"pic" : "/Users/demerle/Downloads/after_no_background.png"
 				}
 
 			}
@@ -468,7 +448,7 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"midpoints" : [ 254.5, 576.975145161151886, 233.946564674377441, 576.975145161151886, 233.946564674377441, 499.962222427129745, 53.5, 499.962222427129745 ],
+					"midpoints" : [ 250.5, 462.975145161151886, 229.946564674377441, 462.975145161151886, 229.946564674377441, 385.962222427129745, 49.5, 385.962222427129745 ],
 					"source" : [ "obj-10", 0 ]
 				}
 
@@ -491,7 +471,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
-					"midpoints" : [ 53.5, 402.59375, 126.0, 402.59375, 126.0, 402.59375, 148.5, 402.59375 ],
+					"midpoints" : [ 49.5, 288.59375, 122.0, 288.59375, 122.0, 288.59375, 144.5, 288.59375 ],
 					"order" : 0,
 					"source" : [ "obj-13", 0 ]
 				}
@@ -500,7 +480,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"midpoints" : [ 353.5, 542.096248913556337, 239.86859543249011, 542.096248913556337, 239.86859543249011, 499.256951689720154, 53.5, 499.256951689720154 ],
+					"midpoints" : [ 349.5, 428.096248913556337, 235.86859543249011, 428.096248913556337, 235.86859543249011, 385.256951689720154, 49.5, 385.256951689720154 ],
 					"source" : [ "obj-17", 0 ]
 				}
 
@@ -538,7 +518,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"midpoints" : [ 254.5, 543.454074911773205, 240.0, 543.454074911773205, 240.0, 500.59375, 53.5, 500.59375 ],
+					"midpoints" : [ 250.5, 429.454074911773205, 236.0, 429.454074911773205, 236.0, 386.59375, 49.5, 386.59375 ],
 					"source" : [ "obj-37", 0 ]
 				}
 
@@ -577,7 +557,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
-					"midpoints" : [ 247.5, 402.59375, 340.5, 402.59375, 340.5, 402.59375, 340.5, 402.59375 ],
+					"midpoints" : [ 243.5, 288.59375, 336.5, 288.59375, 336.5, 288.59375, 336.5, 288.59375 ],
 					"order" : 0,
 					"source" : [ "obj-8", 0 ]
 				}
@@ -616,76 +596,62 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "acids-eps.png",
-				"bootpath" : "~/Downloads",
-				"patcherrelativepath" : "../../../../../Downloads",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "after_no_background.png",
-				"bootpath" : "~/Downloads",
-				"patcherrelativepath" : "../../../../../Downloads",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "flute.wav",
-				"bootpath" : "~/Documents/PHD/repos/AFTER/patchs/samples",
-				"patcherrelativepath" : "./samples",
+				"bootpath" : "D:/AFTER/patchs",
+				"patcherrelativepath" : ".",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "guitar1.wav",
-				"bootpath" : "~/Documents/PHD/repos/AFTER/patchs/samples",
-				"patcherrelativepath" : "./samples",
+				"bootpath" : "D:/AFTER/patchs",
+				"patcherrelativepath" : ".",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "guitar2.wav",
-				"bootpath" : "~/Documents/PHD/repos/AFTER/patchs/samples",
-				"patcherrelativepath" : "./samples",
+				"bootpath" : "D:/AFTER/patchs",
+				"patcherrelativepath" : ".",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "keys.wav",
-				"bootpath" : "~/Documents/PHD/repos/AFTER/patchs/samples",
-				"patcherrelativepath" : "./samples",
+				"bootpath" : "D:/AFTER/patchs",
+				"patcherrelativepath" : ".",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "nn~.mxo",
-				"type" : "iLaX"
+				"name" : "nn~.mxe64",
+				"type" : "mx64"
 			}
 , 			{
 				"name" : "piano.wav",
-				"bootpath" : "~/Documents/PHD/repos/AFTER/patchs/samples",
-				"patcherrelativepath" : "./samples",
+				"bootpath" : "D:/AFTER/patchs",
+				"patcherrelativepath" : ".",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "strings.wav",
-				"bootpath" : "~/Documents/PHD/repos/AFTER/patchs/samples",
-				"patcherrelativepath" : "./samples",
+				"bootpath" : "D:/AFTER/patchs",
+				"patcherrelativepath" : ".",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "synth.wav",
-				"bootpath" : "~/Documents/PHD/repos/AFTER/patchs/samples",
-				"patcherrelativepath" : "./samples",
+				"bootpath" : "D:/AFTER/patchs",
+				"patcherrelativepath" : ".",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "voice.wav",
-				"bootpath" : "~/Documents/PHD/repos/AFTER/patchs/samples",
-				"patcherrelativepath" : "./samples",
+				"bootpath" : "D:/AFTER/patchs",
+				"patcherrelativepath" : ".",
 				"type" : "WAVE",
 				"implicit" : 1
 			}

@@ -144,6 +144,9 @@ def main(args):
                                      init_cache=args.use_cache)
         train_sampler, val_sampler = None, None
 
+    # DEBUG
+    print(f"Dataset size: {len(dataset)}")
+
     train_loader = torch.utils.data.DataLoader(
         dataset,
         batch_size=args.bsize,
